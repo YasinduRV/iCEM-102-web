@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="about.css">
+    <title>About</title>
+</head>
+<body>
+    <header class="container">
+        <div class="page-header">
+            <div class="logo">
+                <a href="#">WEATHER APP API</a>
+            </div>
+
+            <ul>
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="About.html" class="active">About</a></li>
+                <li><a href="#">Weather Details</a></li>
+                <li><a href="contacts.html">Contact</a></li>
+            </ul>
+            <label class="mode">
+                <input type="checkbox" id="darkModeToggle">
+                <i class='bx bxs-moon'></i>
+            </label>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="left-content">
+            <p class="about-tag">About</p>
+            <p class="about-para">This WEATHER API APP is created to display location based real time weather.  This app provides many facilities.  You can get Location based Historical Weather Details, Future weather prsdictions and Weather Alerts etc.</p>
+        </div>
+
+        <div class="right-img">
+         <img src="weather-app-img\images\drizzle.png" class="body-image">
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script>
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+        const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+            darkModeToggle.checked = true;
+        }
+        darkModeToggle.addEventListener('change', () => {
+            if (darkModeToggle.checked) {
+                body.classList.add('dark-mode');
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                body.classList.remove('dark-mode');
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        });
+    </script>
+
+</body>
+
+</html>

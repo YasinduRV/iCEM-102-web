@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="about.css">
+    <title>Contacts</title>
+</head>
+<body>
+    <header class="container">
+        <div class="page-header">
+            <div class="logo">
+                <a href="#">WEATHER APP API</a>
+            </div>
+
+            <ul>
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="About.html" >About</a></li>
+                <li><a href="#">Weather Details</a></li>
+                <li><a href="contacts.html"class="active">Contact</a></li>
+            </ul>
+            <label class="mode">
+                <input type="checkbox" id="darkModeToggle">
+                <i class='bx bxs-moon'></i>
+            </label>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="left-content">
+            <p class="about-tag">Contact</p>
+            <p class="about-para">For the all types of inqueries, feel free for contacts us.</p>
+            <p class="about-para">Contact : (+94) 77 971 2044 <br><br> Email : weatherapiapp#rtw@gmail.com</p>
+        </div>
+
+        <div class="right-img">
+         <img src="weather-app-img\images\drizzle.png" class="body-image">
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script>
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+        const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+            darkModeToggle.checked = true;
+        }
+        darkModeToggle.addEventListener('change', () => {
+            if (darkModeToggle.checked) {
+                body.classList.add('dark-mode');
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                body.classList.remove('dark-mode');
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        });
+    </script>
+
+</body>
+
+</html>
