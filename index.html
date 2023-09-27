@@ -58,10 +58,10 @@
         <div class="up">
             <div class="other-details">
                 <ul class="details-list">
-                    <li>UV</li>
-                    <li>PRESSURE</li>
-                    <li>VISION</li>
-                    <li>FEELS LIKE</li>
+                    <li class="uv-li">UV</li>
+                    <li class="pre-li">PRESSURE</li>
+                    <li class="vis-li">VISION</li>
+                    <li class="fl-li">FEELS LIKE</li>
                 </ul>
             </div>
             <div class="other-display">
@@ -85,8 +85,8 @@
         <div class="down">
             <div class="forecast">
                 <ul class="details-list">
-                    <li>YESTERDAY</li>
-                    <li>TOMORROW</li>
+                    <li class="yest-li">YESTERDAY</li>
+                    <li class="tomm-li">TOMORROW</li>
                 </ul>
             </div>
             <div class="other-display">
@@ -162,11 +162,132 @@
 </div>
 
 
-
-    <div class="location-map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7925.876441252433!2d79.92721813783716!3d6.65457977995789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2481aea9a8843%3A0x40eba0765b5b5109!2sMolligoda%2C%20Wadduwa!5e0!3m2!1sen!2slk!4v1695056654533!5m2!1sen!2slk" class="map" width="435" height="190" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="map-alert">
+        <div class="location-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7925.876441252433!2d79.92721813783716!3d6.65457977995789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2481aea9a8843%3A0x40eba0765b5b5109!2sMolligoda%2C%20Wadduwa!5e0!3m2!1sen!2slk!4v1695056654533!5m2!1sen!2slk" class="map" width="427" height="190" style="border:0; margin-left: 64%; " ></iframe>
+        </div>
+        <div class="alert">
+            <h1 id="msg">Grab an Umbrella!</h1>
+        </div>
     </div>
+<div class="middle">
+    <div class="weather-details">
+        <div class="header-row">
+            <div class="row-display">
+                <p class="date">Date</p>
+                <p class="humidity-H">Humidity</p>
+                <p class="tempreature-H">Tempreature</p>
+                <p class="wind-speed-H">Wind Speed</p>
+            </div>
+        </div>
+        <div class="row1">
+            <div class="row-display">
+                <p class="date1">Today</p>
+                <p class="humidity1">50%</p>
+                <p class="tempreature1">22 °C</p>
+                <p class="wind-speed1">15 hm/h</p>
+            </div>
+        </div>
+        <div class="row2">
+            <div class="row-display">
+                <p class="date2">Today</p>
+                <p class="humidity2">50%</p>
+                <p class="tempreature2">22 °C</p>
+                <p class="wind-speed2">15 hm/h</p>
+            </div>
+        </div>
+        <div class="row3">
+            <div class="row-display">
+                <p class="date3">Today</p>
+                <p class="humidity3">50%</p>
+                <p class="tempreature3">22 °C</p>
+                <p class="wind-speed3">15 hm/h</p>
+            </div>
+        </div>
+        <div class="row4">
+            <div class="row-display">
+                <p class="date4">Today</p>
+                <p class="humidity4">50%</p>
+                <p class="tempreature4">22 °C</p>
+                <p class="wind-speed4">15 hm/h</p>
+            </div>
+        </div>
+        <div class="row5">
+            <div class="row-display">
+                <p class="date5">Today</p>
+                <p class="humidity5">50%</p>
+                <p class="tempreature5">22 °C</p>
+                <p class="wind-speed5">15 hm/h</p>
+            </div>
+        </div>
+        <div class="row6">
+            <div class="row-display">
+                <p class="date6">Today</p>
+                <p class="humidity6">50%</p>
+                <p class="tempreature6">22 °C</p>
+                <p class="wind-speed6">15 hm/h</p>
+            </div>
+        </div>
+    </div>
+    <div class="search-weather">
+            <input type="text" placeholder="Enter Date (yyyy-mm-dd)">
+            <button><img src="weather-app-img\images\search.png" alt=""></button>
+            <div class="weather-details2">
+                <div class="header-row2">
+                    <div class="row-display">
+                        <p class="date">Date</p>
+                        <p class="humidity-H">Humidity</p>
+                        <p class="tempreature-H">Tempreature</p>
+                        <p class="wind-speed-H">Wind Speed</p>
+                    </div>
+                </div>
+                    
+                <div class="row7">
+                    <div class="row-display">
+                        <p class="date6"></p>
+                        <p class="humidity6"></p>
+                        <p class="tempreature6"></p>
+                        <p class="wind-speed6"></p>
+                    </div>
+                </div>
+            </div>
+           
+    </div>
+</div>
 
+
+
+
+
+
+
+
+    <div class="purchase-cards">
+        <div class="card1">
+            <br>
+            <p class="price"><b>$ 16.66</b></p><br><br>
+            <ul class="card-list">
+                <li class="li3">> Limited calls per month</li>
+                <li class="li3">> Realtime weather</li>
+                <li class="li3">> Historical weather : Limit 5 days</li>
+                <li class="li3">> Future weather prediction</li>
+            </ul>
+            <center><button class="purchase-btn1">Purchase</button></center>
+        </div>
+        
+        <div class="card2">
+            <br>
+            <p class="price"><b>$ 36.66</b></p><br><br>
+            <ul class="card-list">
+                <li class="li3">> Unlimited calls per month</li>
+                <li class="li3">> Realtime weather</li>
+                <li class="li3">> Historical weather : Limit 7 days</li>
+                <li class="li3">> Future weather prediction</li>
+                <li class="li3">> Weather alerts</li>
+            </ul>
+            <center><button class="purchase-btn2">Purchase</button></center>
+        </div>
+    </div>
     <script src="script\script.js"></script>
 </body>
 </html>
