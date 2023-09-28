@@ -228,8 +228,11 @@ iframe{
 }
 
 .map{
+    position: relative;
     min-width: 28%;
     margin-right: 5%;
+    border:0; 
+    margin-left: 64%;
 }
 
 .map-alert{
