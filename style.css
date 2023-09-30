@@ -13,11 +13,13 @@
 body{
     font-family: 'Outfit', sans-serif;
     transition: background-color 0.3s, color 0.3s;
+    min-width: 450px;
 }
 
 
 .top{
     display: flex;
+    color:aliceblue;
 }
 
 .card{
@@ -237,6 +239,7 @@ iframe{
 
 .map-alert{
   display: flex;
+  color:aliceblue;
 }
 
 .alert{
@@ -354,6 +357,7 @@ iframe{
 
 .middle{
     display: flex;
+    color:aliceblue;
 }
 
 
@@ -421,7 +425,7 @@ li a:hover {
 
 .dark-mode {
     background-color: var(--primary-dark);
-    color: #ffffff;
+    color: #fff;
 }
 
 .mode input {
@@ -466,7 +470,7 @@ li a:hover {
 }
 
 .purchase-btn1{
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: #06d4f8;
     width: 60%;
     justify-content: center;
@@ -510,4 +514,5 @@ li a:hover {
     display: flex;
     margin-top: 15%;
     margin-bottom: 10%;
+    color:aliceblue;
 }
